@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:learning/column.dart';
 import 'package:learning/latihan.dart';
+import 'package:learning/latihan2.dart';
+import 'listview/list_basic.dart';
 import 'text.dart';
 
 import 'container.dart';
@@ -17,13 +19,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Flutter Pertama",
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: Text("Belajar Flutter"),
           backgroundColor: Colors.pinkAccent,
+          centerTitle: true,
         ),
-        body: Latihan(),
+        body: LatihanDua(),
       ),
+      // home: ContainerWidget(),
     );
   }
 }

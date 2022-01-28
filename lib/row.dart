@@ -6,7 +6,7 @@ class RowWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         // container 1
         Container(
@@ -18,6 +18,12 @@ class RowWidget extends StatelessWidget {
         // container 2
         Container(
           color: Colors.redAccent,
+          child: FlutterLogo(
+            size: 60,
+          ),
+        ),
+        Container(
+          color: Colors.cyan,
           child: FlutterLogo(
             size: 60,
           ),

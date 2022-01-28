@@ -13,7 +13,9 @@ class ContainerWidget extends StatelessWidget {
           decoration: BoxDecoration(
             color: Colors.redAccent,
             image: DecorationImage(
-                image: AssetImage('assets/img/profile.png'), fit: BoxFit.cover),
+              image: AssetImage('assets/img/profile.png'),
+              fit: BoxFit.cover,
+            ),
             border: Border.all(color: Colors.black, width: 8),
             borderRadius: BorderRadius.circular(12),
           ),

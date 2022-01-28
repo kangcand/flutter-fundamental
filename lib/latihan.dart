@@ -37,7 +37,10 @@ class Latihan extends StatelessWidget {
                 child: Center(
                   child: Text(
                     "Lorem Ipsum Sit amet, \nLorem Ipsum Sit amet \nLorem Ipsum Sit amet",
-                    style: TextStyle(color: Colors.white, fontSize: 18),
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: 'DancingScript',
+                        fontSize: 28),
                   ),
                 ),
               ),
