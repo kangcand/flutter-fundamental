@@ -1,7 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:learning/column.dart';
+import 'package:learning/contoh.dart';
+import 'package:learning/contohstateful.dart';
+import 'package:learning/gridview/basic.dart';
+import 'package:learning/gridview/grid_builder.dart';
+import 'package:learning/gridview/grid_count.dart';
+import 'package:learning/gridview/grid_count_dua.dart';
+import 'package:learning/gridview/grid_latihan.dart';
 import 'package:learning/latihan.dart';
 import 'package:learning/latihan2.dart';
+import 'package:learning/listview/list_basic2.dart';
+import 'package:learning/listview/list_builder.dart';
+import 'package:learning/stackwidget/indexed.dart';
+import 'package:learning/stackwidget/latihan.dart';
+import 'package:learning/stackwidget/satu.dart';
+import 'latihan3.dart';
 import 'listview/list_basic.dart';
 import 'text.dart';
 
@@ -20,14 +33,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Flutter Pertama",
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Belajar Flutter"),
-          backgroundColor: Colors.pinkAccent,
-          centerTitle: true,
-        ),
-        body: LatihanDua(),
-      ),
+      home: BelajarStackWidget(),
+      // Scaffold(
+      //   appBar: AppBar(
+      //     title: Text("Belajar Flutter"),
+      //     backgroundColor: Colors.pinkAccent,
+      //     centerTitle: true,
+      //   ),
+      //   body: StackIndexed(),
+      // ),
       // home: ContainerWidget(),
     );
   }
